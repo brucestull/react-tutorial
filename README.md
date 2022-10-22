@@ -1,2 +1,4 @@
 # react-tutorial
-My own personal Reactjs tutorial repository.
+
+## Resources:
+* [Tutorial: Intro to React](https://reactjs.org/tutorial/tutorial.html)
