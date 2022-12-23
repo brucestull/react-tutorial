@@ -4,8 +4,8 @@
 # Ignore `local_things`
 local_things*
 
-# Created by https://www.toptal.com/developers/gitignore/api/macos,python,django,windows,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,python,django,windows,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/macos,python,django,windows,visualstudiocode,react
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,python,django,windows,visualstudiocode,react
 
 ### Django ###
 *.log
@@ -292,14 +292,33 @@ Temporary Items
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 
+### Python Patch ###
+# Poetry local configuration file - https://python-poetry.org/docs/configuration/#local-configuration
+poetry.toml
+
+
+### react ###
+.DS_*
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+
+*.sublime*
+
+psd
+thumb
+sketch
+
 ### VisualStudioCode ###
-.vscode
-# .vscode/*
-# !.vscode/settings.json
-# !.vscode/tasks.json
-# !.vscode/launch.json
-# !.vscode/extensions.json
-# !.vscode/*.code-snippets
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
 
 # Local History for Visual Studio Code
 .history/
@@ -311,12 +330,6 @@ Temporary Items
 # Ignore all local history of files
 .history
 .ionide
-
-# Support for Project snippet scope
-.vscode/*.code-snippets
-
-# Ignore code-workspaces
-*.code-workspace
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -344,4 +357,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,python,django,windows,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/macos,python,django,windows,visualstudiocode,react
