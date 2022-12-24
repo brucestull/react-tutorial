@@ -2,8 +2,12 @@
 
 ## Knowledge Paths
 
-* ["Hello, World" Path](./paths/hello-world-path.md)
-* [Tutorial Path](./paths/tutorial-path.md)
+* ["Hello, World" Path](./paths/hello-world-path/README.md)
+* [Tutorial Path](./paths/tutorial-path/README.md)
+* [React Skeleton App](./skeleton-app/README.md):
+  1. `npx create-react-app skeleton-app`
+  1. `cd skeleton-app`
+  1. `npm start`
 
 ## Resources
 
