@@ -247,3 +247,105 @@
     * `Square`
     * `Board`
     * `Game`
+
+1. Modify the `Square` component to display the value of the `i` via the `theFirstPropsVariable` prop:
+    * Sample code:
+
+        ```js
+        class Square extends React.Component {
+            render() {
+                return (
+                    <button className="square">
+                        {this.props.theFirstPropsVariable}
+                    </button>
+                );
+            }
+        }
+        ```
+
+1. Modify the `Board` component to pass the value of `i` to the `Square` component prop `theFirstPropsVariable`:
+    * Sample code:
+
+        ```js
+        class Board extends React.Component {
+            //...
+            renderSquare(i) {
+                return <Square theFirstPropsVariable={i}/>;
+            }
+            //...
+        }
+        ```
+
+1. Add interactivity to the `Square` component:
+    * Sample code:
+
+        ```js
+        class Square extends React.Component {
+            render() {
+                return (
+                    <button
+                        className="square"
+                        onClick={function() { console.log('Clicked!'); }}
+                        >
+                        {this.props.theFirstPropsVariable}
+                    </button>
+                );
+            }
+        }
+        ```
+
+1. Modify the `Square` component to use an arrow function:
+    * Sample code:
+
+        ```js
+        class Square extends React.Component {
+            render() {
+                return (
+                    <button
+                        className="square"
+                        onClick={() => console.log('Clicked!')}
+                        >
+                        {this.props.theFirstPropsVariable}
+                    </button>
+                );
+            }
+        }
+        ```
+
+1. Add contructor to `Square` component to initialize the state:
+    * Sample code:
+
+        ```js
+        class Square extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    value: null,
+                };
+            }
+            //...
+        }
+        ```
+
+1. Modify the `render` method of the `Square` component to display the current state's value:
+    * Sample code:
+
+        ```js
+        class Square extends React.Component {
+            //...
+            render() {
+                return (
+                    <button
+                        className="square"
+                        onClick={() => {
+                            console.log('Clicked!', this.props.theFirstPropsVariable);
+                            this.setState({ theFirstStateVariable: 'X' });
+                        }}
+                        >
+                        {this.state.theFirstStateVariable}
+                    </button>
+                );
+            }
+            //...
+        }
+        ```
