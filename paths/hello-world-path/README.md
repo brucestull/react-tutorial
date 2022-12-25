@@ -2,7 +2,7 @@
 
 ## Repository Links
 
-* [`READM.md`](../../README.md)
+* [`README.md`](../../README.md)
 * [`paths/tutorial-path.md`](../tutorial-path/README.md)
 
 ## Resources
