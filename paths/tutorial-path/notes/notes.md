@@ -351,3 +351,6 @@
         ```
 
 1. <https://reactjs.org/tutorial/tutorial.html#why-immutability-is-important>
+
+1. Next steps:
+    * <https://reactjs.org/tutorial/tutorial.html#wrapping-up>
