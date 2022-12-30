@@ -1,12 +1,12 @@
 # React App Hello, World Summary
 
-* [`my-app/public/index.html`](../my-app/public/index.html):
+* [`00-my-app/public/index.html`](../00-my-app/public/index.html):
 
     ```html
     <div id="root"></div>
     ```
 
-* [`my-app/src/index.js`](../my-app/src/index.js):
+* [`00-my-app/src/index.js`](../00-my-app/src/index.js):
 
     ```js
     import ReactDOM from 'react-dom';
@@ -18,11 +18,11 @@
 
     ```
 
-* [`my-app/package.json`](../my-app/package.json):
+* [`00-my-app/package.json`](../00-my-app/package.json):
 
     ```json
     {
-      "name": "my-app",
+      "name": "00-my-app",
       "version": "0.1.0",
       "private": true,
       "dependencies": {
