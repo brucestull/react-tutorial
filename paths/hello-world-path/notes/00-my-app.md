@@ -179,7 +179,7 @@
     * [`00-my-app/src/index.js`](../00-my-app/src/index.js)
     * [`00-my-app/package.json`](../00-my-app/package.json)
 
-1. [React App Hello, World Summary](./react_app_hello_world_summary.md)
+1. [React App Hello, World Summary](./00-my-app-summary.md)
     * Notes:
         * `create-react-app` is a tool that creates a React app with a specific set of files, including a `package.json` file, but there may be more files included than necessary.
         * Need to strategically remove objects from the [`00-my-app/package.json`](../00-my-app/package.json) file to reduce the number of dependencies.
