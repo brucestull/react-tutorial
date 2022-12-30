@@ -8,3 +8,4 @@
 ## Resources
 
 * [Hello World - reactjs.org](https://reactjs.org/docs/hello-world.html)
+* [Hello World - codepen.io](https://codepen.io/gaearon/pen/MjrdWg?editors=1010)
