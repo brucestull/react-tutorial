@@ -128,5 +128,149 @@
         * <http://localhost:3000/>
         * Sample browser image:
 
-            ![React App Default Browser Image](../images/react-app-default-browser-output.png)
+            ![React App Default Browser Image](../images/00-react-app-default-browser-output.png)
 
+1. Remove content of [`the-react-app/src/`](../the-react-app/src/) directory.
+
+1. Create a new file in the [`the-react-app/src/`](../the-react-app/src/) directory named `index.js`:
+    * `New-Item -Path src\index.js -ItemType File`:
+        * Sample console output:
+
+            ```console
+            PS C:\Users\FlynntKnapp\Programming\react-tutorial\the-react-app> New-Item -Path src\index.js -ItemType File
+            
+            
+                Directory: C:\Users\FlynntKnapp\Programming\react-tutorial\the-react-app\src
+            
+            
+            Mode                 LastWriteTime         Length Name
+            ----                 -------------         ------ ----
+            -a---            1/1/2023 10:15 AM              0 index.js
+            
+            
+            PS C:\Users\FlynntKnapp\Programming\react-tutorial\the-react-app>
+            ```
+
+1. Create a new file in the [`the-react-app/src/`](../the-react-app/src/) directory named `index.css`:
+    * `New-Item -Path src\index.css -ItemType File`:
+        * Sample console output:
+
+            ```console
+            PS C:\Users\FlynntKnapp\Programming\react-tutorial\the-react-app> New-Item -Path src\index.css -ItemType File
+            
+            
+                Directory: C:\Users\FlynntKnapp\Programming\react-tutorial\the-react-app\src
+            
+            
+            Mode                 LastWriteTime         Length Name
+            ----                 -------------         ------ ----
+            -a---            1/1/2023 10:15 AM              0 index.css
+            
+            
+            PS C:\Users\FlynntKnapp\Programming\react-tutorial\the-react-app>
+            ```
+
+1. Add content to [`the-react-app/src/index.js`](../the-react-app/src/index.js):
+    * Sample code:
+
+        ```javascript
+        import React from 'react';
+        import ReactDOM from 'react-dom/client';
+        import './index.css';
+
+        class Square extends React.Component {
+            render() {
+                return (
+                    <button className="square">
+                        {/* TODO */}
+                    </button>
+                );
+            }
+        }
+
+        class Board extends React.Component {
+            renderSquare(i) {
+                return <Square />;
+            }
+
+            render() {
+                const status = 'Next player: X';
+
+                return (
+                    <div>
+                        <div className="status">{status}</div>
+                        <div className="board-row">
+                            {this.renderSquare(0)}
+                            {this.renderSquare(1)}
+                            {this.renderSquare(2)}
+                        </div>
+                        <div className="board-row">
+                            {this.renderSquare(3)}
+                            {this.renderSquare(4)}
+                            {this.renderSquare(5)}
+                        </div>
+                        <div className="board-row">
+                            {this.renderSquare(6)}
+                            {this.renderSquare(7)}
+                            {this.renderSquare(8)}
+                        </div>
+                    </div>
+                );
+            }
+        }
+
+        class Game extends React.Component {
+            render() {
+                return (
+                    <div className="game">
+                        <div className="game-board">
+                            <Board />
+                        </div>
+                        <div className="game-info">
+                            <div>{/* status */}</div>
+                            <ol>{/* TODO */}</ol>
+                        </div>
+                    </div>
+                );
+            }
+        }
+
+        // ========================================
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(<Game />);
+        ```
+
+1. Start server to test current app configuration:
+    * `npm start`:
+        * Sample console output:
+
+            ```console
+            PS C:\Users\FlynntKnapp\Programming\react-tutorial\the-react-app> npm start
+
+            > the-react-app@0.1.0 start
+            > react-scripts start
+
+            (node:20900) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+            (Use `node --trace-deprecation ...` to show where the warning was created)
+            (node:20900) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+            Starting the development server...
+            Compiled successfully!
+
+            You can now view the-react-app in the browser.
+
+              Local:            http://localhost:3000
+              On Your Network:  http://192.168.0.8:3000
+
+            Note that the development build is not optimized.
+            To create a production build, use npm run build.
+
+            webpack compiled successfully
+            ```
+
+1. Sample browser image:
+
+    ![React App Tic-Tac-Toe Board](../images/01-react-app-tic-tac-toe-board.png)
+
+1. Current step in guide:
+    * <https://reactjs.org/tutorial/tutorial.html#what-is-react>
