@@ -1,16 +1,8 @@
 # react-tutorial
 
-## Knowledge Paths
-
-* [React Skeleton App](./skeleton-app/README.md):
-  1. `npx create-react-app my-app`
-  1. `npx create-react-app the-react-app`
-  1. `npx create-react-app skeleton-app`
-  1. `cd skeleton-app`
-  1. `npm start`
-
 ## Commands
 
+* `npx create-react-app the-react-app`
 * `npm install`
 * `npm start`
 

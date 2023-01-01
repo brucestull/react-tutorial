@@ -102,12 +102,21 @@
             * Sample console output:
 
                 ```console
+                PS C:\Users\FlynntKnapp\Programming\react-tutorial\the-react-app> npm start
+
+                > the-react-app@0.1.0 start
+                > react-scripts start
+
+                (node:13748) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+                (Use `node --trace-deprecation ...` to show where the warning was created)
+                (node:13748) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+                Starting the development server...
                 Compiled successfully!
 
                 You can now view the-react-app in the browser.
 
                   Local:            http://localhost:3000
-                  On Your Network:  http://192.168.100.211:3000
+                  On Your Network:  http://192.168.0.8:3000
 
                 Note that the development build is not optimized.
                 To create a production build, use npm run build.
@@ -115,7 +124,9 @@
                 webpack compiled successfully
                 ```
 
-    1. The app opens the browser to the URL displayed in the console output.
+    1. The app opens the browser to the URL displayed in the console output:
+        * <http://localhost:3000/>
         * Sample browser image:
 
             ![React App Default Browser Image](../images/react-app-default-browser-output.png)
+
